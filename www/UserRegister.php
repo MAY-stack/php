@@ -1,5 +1,5 @@
 <?php
-    $con = mysqli_connect("svc.sel4.cloudtype.app:32647", "root", "12345", "root");
+    $con = mysqli_connect("svc.sel4.cloudtype.app:32647", "webmaster, "12345", "1stAndroid");
 
     $userid = $_POST["userid"];
     $userpassword = $_POST["userpassword"];
