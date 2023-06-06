@@ -3,7 +3,7 @@
 
     $userid = $_POST["userid"];
    
-    $statement = mysqli_prepare($con, "SELECT * FROM USER WHERE userid = '?'");
+    $statement = mysqli_prepare($con, "SELECT * FROM USER WHERE userid = ?");
     mysqli_stmt_bind_param($statement, "s", $userid);
     mysqli_execute($statement);
     mysqli_store_result($statement);
